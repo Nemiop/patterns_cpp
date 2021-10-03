@@ -116,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Self-study\projects_programming\cpp\1. Strategy\Strategies</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +131,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,14 +143,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1. Strategy.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="DuckBase.h" />
-    <ClInclude Include="ExoticDuck.h" />
-    <ClInclude Include="MetalDuck.h" />
-    <ClInclude Include="RubberDuck.h" />
-    <ClInclude Include="WoodenDuck.h" />
-    <ClInclude Include="SimpleDuck.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

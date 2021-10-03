@@ -19,24 +19,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="DuckBase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SimpleDuck.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ExoticDuck.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WoodenDuck.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RubberDuck.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MetalDuck.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>

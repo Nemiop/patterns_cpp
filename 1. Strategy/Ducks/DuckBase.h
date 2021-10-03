@@ -1,10 +1,21 @@
 #pragma once
 #include <iostream>
 
+#include "../Strategies/FlyingStrategy.h"
+#include "../Strategies/FlyingWithWings.h"
+
 namespace DuckStrategy {
 
 class DuckBase {
+	protected: 
+		FlyingStrategy *flyStrategy;
+
 	public:
+		DuckBase() {
+			flyStrategy = new FlyingWithWings();
+		}
+
+
 		void Quack() {
 			std::cout << "Quack! Quack!" << std::endl;
 		}
@@ -14,7 +25,7 @@ class DuckBase {
 		}
 
 		void Fly() {
-			std::cout << "I'm flying!" << std::endl;
+			flyStrategy->Fly();
 		}
 
 		virtual void Display()=0;

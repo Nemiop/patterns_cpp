@@ -14,16 +14,6 @@ int main()
     using namespace std;
     using namespace DuckStrategy;
 
-    /*
-    SimpleDuck simple = SimpleDuck();
-    ExoticDuck exotic = ExoticDuck();
-
-    DuckBase* duck1 = &simple;
-    DuckBase* duck2 = &exotic;
-
-    duck1->Display();
-    */
-
     vector<DuckBase*> ducks;
     ducks.push_back(new SimpleDuck());
     ducks.push_back(new ExoticDuck());
