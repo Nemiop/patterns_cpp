@@ -2,9 +2,12 @@
 #include <iostream>
 #include <vector>
 
-#include "DuckBase.h"
-#include "SimpleDuck.h"
-#include "ExoticDuck.h"
+#include "Ducks/DuckBase.h"
+#include "Ducks/SimpleDuck.h"
+#include "Ducks/ExoticDuck.h"
+#include "Ducks/WoodenDuck.h"
+#include "Ducks/RubberDuck.h"
+#include "Ducks/MetalDuck.h"
 
 int main()
 {
@@ -24,11 +27,16 @@ int main()
     vector<DuckBase*> ducks;
     ducks.push_back(new SimpleDuck());
     ducks.push_back(new ExoticDuck());
+    ducks.push_back(new WoodenDuck());
+    ducks.push_back(new RubberDuck());
+    ducks.push_back(new MetalDuck());
 
     for (auto duck : ducks) {
+        duck->Display();
         duck->Quack();
         duck->Swim();
-        duck->Display();
+        duck->Fly();
+        cout << "\n";
     }
 
 }

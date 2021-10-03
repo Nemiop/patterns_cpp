@@ -144,6 +144,9 @@
   <ItemGroup>
     <ClInclude Include="DuckBase.h" />
     <ClInclude Include="ExoticDuck.h" />
+    <ClInclude Include="MetalDuck.h" />
+    <ClInclude Include="RubberDuck.h" />
+    <ClInclude Include="WoodenDuck.h" />
     <ClInclude Include="SimpleDuck.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
